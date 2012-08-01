@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="Settings" >
+
+    <PreferenceCategory android:title="Network">
+        <EditTextPreference android:key="prefHostAddress" android:summary="Network address host is listening on" android:dialogMessage="Enter host address" android:title="Host Address" android:dialogTitle="Host Address"/>
+        <EditTextPreference android:key="prefPort" android:summary="Port number" android:dialogMessage="Enter port number" android:title="Port" android:dialogTitle="Port"/>
+    </PreferenceCategory><PreferenceCategory android:title="I/O Board" >
+        <ListPreference
+            android:dialogTitle="Input Board Type"
+            android:entries="@array/pref_board_type"
+            android:entryValues="@array/pref_board_values"
+            android:key="prefInputBoardType"
+            android:summary="Select type of input board"
+            android:title="Input Board Type" android:enabled="true" android:defaultValue="1" android:selectable="true"/>
+        <ListPreference
+            android:dialogTitle="Output Board Type"
+            android:entries="@array/pref_board_type"
+            android:entryValues="@array/pref_board_values"
+            android:key="prefOutputBoardType"
+            android:summary="Select type of output board"
+            android:title="Output Board Type" android:enabled="true" android:defaultValue="2" android:selectable="true"/>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Auto Sync" >
+        <CheckBoxPreference
+            android:enabled="true"
+            android:key="prefAutoSync"
+            android:summary="Enables automatic syncronisation of GUI"
+            android:summaryOff="Auto sync disabled"
+            android:summaryOn="Auto sync enabled"
+            android:title="Auto sync" />
+
+        <EditTextPreference
+            android:dialogMessage="Enter desired auto sync interval. [ms]"
+            android:dialogTitle="Auto Sync Interval"
+            android:key="prefAutoSyncInterval"
+            android:summary="GUI update interval"
+            android:title="Auto sync interval" />
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>

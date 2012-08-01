@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">HomePLC Remote</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">HomePLC Remote</string>
+    <string name="host_address">Host address</string>
+    <string name="connect">Connect</string>
+    <string name="homeplc">HomePLC</string>
+    <string name="remote">Remote</string>
+    <string name="outputs">Outputs</string>
+    <string name="inputs">Inputs</string>
+    <string name="log">Log</string>
+    <string name="settings">Settings</string>
+    <string name="copyright">© AppL-DSP Subotica</string>
+
+</resources>

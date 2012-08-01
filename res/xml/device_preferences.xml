@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Network">    
+        <EditTextPreference android:key="prefDeviceIPAddress" android:dialogMessage="Enter IP adress to set" android:title="IP Address" android:dialogTitle="IP Address"/>
+        <EditTextPreference android:dialogMessage="Enter port number to set" android:dialogTitle="Port" android:key="prefDevicePort" android:title="Port"/>
+        <EditTextPreference android:key="prefDeviceSubnetMask" android:dialogMessage="Enter subnet mask to set" android:title="Subnet mask" android:dialogTitle="Subnet Mask"/>
+        <EditTextPreference android:key="prefDeviceDefaultGateway" android:title="Default Gateway" android:dialogMessage="Enter default gateway to set" android:dialogTitle="Default Gateway"/>
+    </PreferenceCategory>
+    
+    <PreferenceCategory android:title="RTC">
+        <Preference android:title="Sync device time" android:key="prefDeviceRTCSync"/>
+    </PreferenceCategory>
+    
+
+</PreferenceScreen>

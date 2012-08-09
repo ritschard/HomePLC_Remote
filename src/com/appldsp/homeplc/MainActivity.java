@@ -35,7 +35,6 @@ public class MainActivity extends Activity {
 	
 	private final static String SERVICE_URI = "http://192.168.1.2:8080/RemoteService";
 	private SharedPreferences preferences = null;
-	private Spinner plateSpinner;
 	
 	private OnSharedPreferenceChangeListener preferenceChangedListener = new OnSharedPreferenceChangeListener() {
 		
@@ -116,7 +115,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onResume() {
 	    super.onResume();
-	    refreshVehicles();
+	    //refreshVehicles();
 	    
 	}    
 	

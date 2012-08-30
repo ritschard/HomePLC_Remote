@@ -80,6 +80,14 @@ public final class R {
         public static final int inputs=0x7f070008;
         public static final int log=0x7f070009;
         public static final int menu_settings=0x7f070001;
+        public static final int o1=0x7f07000c;
+        public static final int o2=0x7f07000d;
+        public static final int o3=0x7f07000e;
+        public static final int o4=0x7f07000f;
+        public static final int o5=0x7f070010;
+        public static final int o6=0x7f070011;
+        public static final int o7=0x7f070012;
+        public static final int o8=0x7f070013;
         public static final int outputs=0x7f070007;
         public static final int remote=0x7f070006;
         public static final int settings=0x7f07000a;

@@ -20,7 +20,7 @@
         android:layout_marginBottom="3dp"
         android:layout_marginTop="20dp"
         android:paddingLeft="10dp"
-        android:text="Output 1" />
+        android:text="@string/o1" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -58,7 +58,7 @@
         android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:paddingLeft="10dp"
-        android:text="Output 2" />
+        android:text="@string/o2" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -94,7 +94,7 @@
         android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:paddingLeft="10dp"
-        android:text="Output 3" />
+        android:text="@string/o3" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -130,7 +130,7 @@
         android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:paddingLeft="10dp"
-        android:text="Output 4" />
+        android:text="@string/o4" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -166,7 +166,7 @@
         android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:paddingLeft="10dp"
-        android:text="Output 5" />
+        android:text="@string/o5" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -202,7 +202,7 @@
         android:layout_marginTop="10dp"
         android:layout_weight="1"
         android:paddingLeft="10dp"
-        android:text="Output 6" />
+        android:text="@string/o6" />
 
     <LinearLayout
         android:layout_width="match_parent"

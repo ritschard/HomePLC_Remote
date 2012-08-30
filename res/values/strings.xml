@@ -12,5 +12,12 @@
     <string name="log">Log</string>
     <string name="settings">Settings</string>
     <string name="copyright">© AppL-DSP Subotica</string>
-
+    <string name="o1">Output 1</string>
+    <string name="o2">Output 2</string>
+    <string name="o3">Output 3</string>
+    <string name="o4">Output 4</string>
+    <string name="o5">Output 5</string>
+    <string name="o6">Output 6</string>
+	<string name="o7">Output 7</string>
+	<string name="o8">Output 8</string>
 </resources>

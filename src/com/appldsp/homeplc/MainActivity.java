@@ -30,6 +30,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
+import org.restlet.*;
 
 public class MainActivity extends Activity {
 	
@@ -115,7 +116,7 @@ public class MainActivity extends Activity {
 	@Override
 	protected void onResume() {
 	    super.onResume();
-	    //refreshVehicles();
+	    //refresh();
 	    
 	}    
 	
@@ -137,39 +138,9 @@ public class MainActivity extends Activity {
     	return super.onOptionsItemSelected(item);
     }
     
-    private void refreshVehicles() {
-        try {
-     
-            // Send GET request to <service>/GetPlates
-            HttpGet request = new HttpGet(SERVICE_URI + "/GetPlates");
-            request.setHeader("Accept", "application/json");
-            request.setHeader("Content-type", "application/json");
-     
-            DefaultHttpClient httpClient = new DefaultHttpClient();
-            HttpResponse response = httpClient.execute(request);
-     
-            HttpEntity responseEntity = response.getEntity();
-             
-            // Read response data into buffer
-            char[] buffer = new char[(int)responseEntity.getContentLength()];
-            InputStream stream = responseEntity.getContent();
-            InputStreamReader reader = new InputStreamReader(stream);
-            reader.read(buffer);
-            stream.close();
-     
-            JSONArray plates = new JSONArray(new String(buffer));
-     
-            // Reset plate spinner
-            /*ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item);
-            adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-            for (int i = 0; i < plates.length(); ++i) {
-                adapter.add(plates.getString(i));
-            }
-            plateSpinner.setAdapter(adapter); */
-             
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    private void refresh() {
+      
+            
     }
     
 }

@@ -2,54 +2,85 @@
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-
-    <ToggleButton
+
+    <Button
         android:id="@+id/toggleButton1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Output 1" />
-
-    <ToggleButton
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:text="OFF"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/toggleButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Output 2" />
-
-    <ToggleButton
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="OFF"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/toggleButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ToggleButton" />
-
-    <ToggleButton
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="OFF"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/toggleButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ToggleButton" />
-
-    <ToggleButton
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="OFF"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/toggleButton5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ToggleButton" />
-
-    <ToggleButton
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="OFF"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/toggleButton6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ToggleButton" />
-
-    <ToggleButton
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="OFF"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/toggleButton7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ToggleButton" />
-
-    <ToggleButton
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="OFF"
+        android:textStyle="bold" />
+
+    <Button
         android:id="@+id/toggleButton8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ToggleButton" />
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="OFF"
+        android:textStyle="bold" />
 
 </TableLayout>

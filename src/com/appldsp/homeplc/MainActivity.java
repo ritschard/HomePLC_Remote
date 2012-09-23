@@ -1,24 +1,9 @@
 package com.appldsp.homeplc;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-
-import org.apache.http.HttpEntity;
-import org.apache.http.HttpResponse;
-import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.HttpClient;
-import org.apache.http.client.ResponseHandler;
-import org.apache.http.client.methods.HttpGet;
-import org.apache.http.impl.client.BasicResponseHandler;
-import org.apache.http.impl.client.DefaultHttpClient;
-import org.json.JSONArray;
-import org.json.JSONException;
-
-import android.R.bool;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.app.Activity;
+import android.app.Application;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener;
@@ -26,15 +11,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.Spinner;
 import android.widget.Toast;
-import org.restlet.*;
 
 public class MainActivity extends Activity {
 	
-	private final static String SERVICE_URI = "http://192.168.1.2:8080/RemoteService";
 	private SharedPreferences preferences = null;
 	
 	private OnSharedPreferenceChangeListener preferenceChangedListener = new OnSharedPreferenceChangeListener() {
@@ -50,8 +31,6 @@ public class MainActivity extends Activity {
 		public void onClick(View v) {
 									
 			String boardType = preferences.getString("prefOutputBoardType", null);
-			
-			Toast.makeText(MainActivity.this, boardType, Toast.LENGTH_SHORT).show();
 									
 			if (boardType.equals("ANALOG")) {
 				
@@ -71,7 +50,14 @@ public class MainActivity extends Activity {
 	private OnClickListener inputsButtonListener = new OnClickListener() {
 			
 		public void onClick(View v) {
-			// TODO Auto-generated method stub
+			
+			String boardType = preferences.getString("prefInputBoardType", null);
+			
+			if (boardType.equals("ANALOG")) {
+				
+				Intent intent = new Intent(MainActivity.this, AnalogInputsActivity.class);
+				startActivity(intent);
+			} 
 			
 		}
 	};
@@ -79,19 +65,12 @@ public class MainActivity extends Activity {
 	private OnClickListener logButtonListener = new OnClickListener() {
 			
 		public void onClick(View v) {
-			// TODO Auto-generated method stub
 			
+			Intent intent = new Intent(MainActivity.this, LogActivity.class);
+			startActivity(intent);
 		}
 	};
-
-	private OnClickListener connectButtonListener = new OnClickListener() {
 		
-		public void onClick(View v) {
-			
-			
-		}
-	};
-	
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -99,10 +78,7 @@ public class MainActivity extends Activity {
         
         preferences = PreferenceManager.getDefaultSharedPreferences(this);     
         preferences.registerOnSharedPreferenceChangeListener(preferenceChangedListener);
-        
-        Button connectButton = (Button) findViewById(R.id.btnConnect);
-        connectButton.setOnClickListener(connectButtonListener);
-        
+                        
         Button outputsButton = (Button) findViewById(R.id.btnOutputs);
         outputsButton.setOnClickListener(outputsButtonListener);
         
@@ -136,11 +112,6 @@ public class MainActivity extends Activity {
 		}    	
     	
     	return super.onOptionsItemSelected(item);
-    }
-    
-    private void refresh() {
-      
-            
     }
     
 }

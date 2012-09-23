@@ -20,4 +20,10 @@
     <string name="o6">Output 6</string>
 	<string name="o7">Output 7</string>
 	<string name="o8">Output 8</string>
+	<string name="i1">Input 1</string>
+    <string name="i2">Input 2</string>
+    <string name="i3">Input 3</string>
+    <string name="i4">Input 4</string>
+    <string name="i5">Input 5</string>
+    <string name="i6">Input 6</string>
 </resources>

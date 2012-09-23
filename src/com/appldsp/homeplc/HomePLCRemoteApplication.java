@@ -7,9 +7,12 @@ import android.preference.PreferenceManager;
 
 public class HomePLCRemoteApplication extends Application {
 	
+	public SharedPreferences preferences = null;
+	
 	@Override
 	public void onCreate() {
 		super.onCreate();
+		
 		
 		
 	}

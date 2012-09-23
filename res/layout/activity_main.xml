@@ -3,6 +3,14 @@
     android:layout_height="fill_parent"
     android:orientation="vertical" >
 
+    <LinearLayout
+        android:id="@+id/LinearLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -13,8 +21,8 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="3dp"
             android:text="@string/homeplc"
-            android:textSize="30sp" />
-
+            android:textSize="50sp" />
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -22,7 +30,8 @@
             android:layout_alignRight="@+id/textView3"
             android:layout_below="@+id/textView3"
             android:text="@string/remote"
-            android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="25sp" />
 
     </RelativeLayout>
 
@@ -30,24 +39,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="3dp" >
-
-        <AutoCompleteTextView
-            android:id="@+id/txtHostAddress"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:ems="10"
-            android:text="@string/host_address" >
-
-            <requestFocus />
-        </AutoCompleteTextView>
-
-        <Button
-            android:id="@+id/btnConnect"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/connect" />
     </LinearLayout>
 
     <LinearLayout
